@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/javimsevilla/reto-numeros-primos/issues"
   },
-  "homepage": "https://github.com/javimsevilla/reto-numeros-primos#readme"
+  "homepage": "https://github.com/javimsevilla/reto-numeros-primos#readme",
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
 }
