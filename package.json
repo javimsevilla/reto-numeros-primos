@@ -19,6 +19,7 @@
   "homepage": "https://github.com/javimsevilla/reto-numeros-primos#readme",
   "devDependencies": {
     "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
     "typescript": "^3.9.3"
   }
 }
