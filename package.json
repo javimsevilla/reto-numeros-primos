@@ -1,7 +1,7 @@
 {
   "name": "reto-numeros-primos",
   "version": "1.0.0",
-  "description": "**Números primos**",
+  "description": "Programa que recibe como entrada un número natural, e indica si es primo o compuesto",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
