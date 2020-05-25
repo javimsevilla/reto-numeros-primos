@@ -6,15 +6,19 @@ export class CustomNumber {
 
   isPrime(value: string): string {
     const num = parseInt(value);
-    if (this.isNotNumber(num)) {
-      throw new Error(this.NOT_A_NUMBER_MESSAGE);
-    }
+    this.validateIsNumber(num);
 
     if (this.isNotNaturalNumber(num)) {
       throw new Error(this.NOT_A_NATURAL_NUMBER_MESSAGE);
     }
 
     return this.EMPTY_VALUE;
+  }
+
+  private validateIsNumber(num: number) {
+    if (this.isNotNumber(num)) {
+      throw new Error(this.NOT_A_NUMBER_MESSAGE);
+    }
   }
 
   private isNotNaturalNumber(num: number): boolean {
