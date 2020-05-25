@@ -6,7 +6,7 @@ export class CustomNumber {
 
   isPrime(value: string): string {
     const num = parseInt(value);
-    if (this.isNotANumber(num)) {
+    if (this.isNotNumber(num)) {
       throw new Error(this.NOT_A_NUMBER_MESSAGE);
     }
 
@@ -21,7 +21,7 @@ export class CustomNumber {
     return num < this.MIN_NATURAL_NUMBER;
   }
 
-  private isNotANumber(num: number) {
+  private isNotNumber(num: number): boolean {
     return Number.isNaN(num);
   }
 }
