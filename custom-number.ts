@@ -7,7 +7,13 @@ export class CustomNumber {
   isPrime(value: string): boolean {
     const num = parseInt(value);
     this.validateInputNumber(num);
-    
+
+    for(let i= 2; i<num; i++){
+      const sub = num%i;
+      if(sub === 0){
+        return false;
+      }
+    }
     return true;
   }
 
