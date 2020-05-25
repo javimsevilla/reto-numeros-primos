@@ -36,7 +36,7 @@ export class CustomNumber {
     return Number.isNaN(num);
   }
 
-  public isPrimeNumber(num:number):boolean{
+  private isPrimeNumber(num:number):boolean{
     for(let i= 2; i<num; i++){
       const sub = num%i;
       if(sub === 0){
