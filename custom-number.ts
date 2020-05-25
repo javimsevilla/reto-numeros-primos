@@ -4,6 +4,10 @@ export class CustomNumber {
       throw new Error('Input is not a number');
     }
 
+    if (parseInt(value) < 0) {
+      throw new Error('Input is not a natural number');
+    }
+
     return '';
   }
 }
