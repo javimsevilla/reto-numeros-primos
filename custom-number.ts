@@ -8,11 +8,15 @@ export class CustomNumber {
     const num = parseInt(value);
     this.validateIsNumber(num);
 
+    this.validateIsNaturalNumber(num);
+
+    return this.EMPTY_VALUE;
+  }
+
+  private validateIsNaturalNumber(num: number) {
     if (this.isNotNaturalNumber(num)) {
       throw new Error(this.NOT_A_NATURAL_NUMBER_MESSAGE);
     }
-
-    return this.EMPTY_VALUE;
   }
 
   private validateIsNumber(num: number) {
