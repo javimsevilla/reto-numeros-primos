@@ -6,11 +6,14 @@ export class CustomNumber {
 
   isPrime(value: string): string {
     const num = parseInt(value);
-    this.validateIsNumber(num);
-
-    this.validateIsNaturalNumber(num);
+    this.validateInputNumber(num);
 
     return this.EMPTY_VALUE;
+  }
+
+  private validateInputNumber(num: number) {
+    this.validateIsNumber(num);
+    this.validateIsNaturalNumber(num);
   }
 
   private validateIsNaturalNumber(num: number) {
