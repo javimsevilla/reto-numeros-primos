@@ -6,7 +6,7 @@ test('Dummy test', () => {
 
 test("should throw an error if it's not a number", () => {
   // Arrange
-  let result: () => string;
+  let result: () => boolean;
   const expected = 'Input is not a number';
   let customNumber = new CustomNumber();
 
@@ -19,7 +19,7 @@ test("should throw an error if it's not a number", () => {
 
 test("should not throw an error if it's a number", () => {
   // Arrange
-  let result: () => string;
+  let result: () => boolean;
   const expected = 'Input is not a number';
   let customNumber = new CustomNumber();
 
@@ -32,7 +32,7 @@ test("should not throw an error if it's a number", () => {
 
 test("should throw an error if it is not a natural number", () => {
   // Arrange
-  let result: () => string;
+  let result: () => boolean;
   const expected = 'Input is not a natural number';
   let customNumber = new CustomNumber();
 
