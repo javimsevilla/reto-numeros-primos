@@ -1,5 +1,9 @@
 export class CustomNumber {
   isPrime(value: string): string {
-    throw new Error('Input is not a number');
+    if (Number.isNaN(parseInt(value))) {
+      throw new Error('Input is not a number');
+    }
+
+    return '';
   }
 }
