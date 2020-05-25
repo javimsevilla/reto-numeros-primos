@@ -6,13 +6,13 @@ test('Dummy test', () => {
 
 test("should throw an error if it's not a number", () => {
   // Arrange
-  let result = '';
+  let result: () => string;
   const expected = 'Input is not a number';
   let customNumber = new CustomNumber();
 
   // Act
-  result = customNumber.isPrime('a');
+  result = () => customNumber.isPrime('a');
 
   // Assert
-  expect(result).toThrowError(expected);
+  expect(result).toThrow(expected);
 });
