@@ -42,3 +42,25 @@ test("should throw an error if it is not a natural number", () => {
   // Assert
   expect(result).toThrow(expected);
 });
+
+test("should return true if number is prime", () => {
+  // Arrange
+  let result;
+  const expected = true;
+  let customNumber = new CustomNumber();
+
+  // Act
+  result = customNumber.isPrime('3');
+
+  // Assert
+  expect(result).toBe(expected);
+});
+
+/*
+zero
+one
+two
+two-max
+max
+max+1
+*/
