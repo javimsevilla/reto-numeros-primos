@@ -11,18 +11,18 @@ export class CustomNumber {
     return this.isPrimeNumber(num);
   }
 
-  private validateInputNumber(num: number) {
+  private validateInputNumber(num: number): void {
     this.validateIsNumber(num);
     this.validateIsNaturalNumber(num);
   }
 
-  private validateIsNaturalNumber(num: number) {
+  private validateIsNaturalNumber(num: number): void {
     if (this.isNotNaturalNumber(num)) {
       throw new Error(this.NOT_A_NATURAL_NUMBER_MESSAGE);
     }
   }
 
-  private validateIsNumber(num: number) {
+  private validateIsNumber(num: number): void {
     if (this.isNotNumber(num)) {
       throw new Error(this.NOT_A_NUMBER_MESSAGE);
     }
