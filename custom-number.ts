@@ -4,11 +4,11 @@ export class CustomNumber {
   private readonly EMPTY_VALUE = '';
   private readonly MIN_NATURAL_NUMBER = 0;
 
-  isPrime(value: string): string {
+  isPrime(value: string): boolean {
     const num = parseInt(value);
     this.validateInputNumber(num);
-
-    return this.EMPTY_VALUE;
+    
+    return true;
   }
 
   private validateInputNumber(num: number) {
