@@ -10,11 +10,15 @@ export class CustomNumber {
       throw new Error(this.NOT_A_NUMBER_MESSAGE);
     }
 
-    if (num < this.MIN_NATURAL_NUMBER) {
+    if (this.isNotNaturalNumber(num)) {
       throw new Error(this.NOT_A_NATURAL_NUMBER_MESSAGE);
     }
 
     return this.EMPTY_VALUE;
+  }
+
+  private isNotNaturalNumber(num: number): boolean {
+    return num < this.MIN_NATURAL_NUMBER;
   }
 
   private isNotANumber(num: number) {
