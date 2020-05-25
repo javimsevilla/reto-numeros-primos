@@ -8,13 +8,7 @@ export class CustomNumber {
     const num = parseInt(value);
     this.validateInputNumber(num);
 
-    for(let i= 2; i<num; i++){
-      const sub = num%i;
-      if(sub === 0){
-        return false;
-      }
-    }
-    return true;
+    return this.isPrimeNumber(num);
   }
 
   private validateInputNumber(num: number) {
@@ -40,5 +34,15 @@ export class CustomNumber {
 
   private isNotNumber(num: number): boolean {
     return Number.isNaN(num);
+  }
+
+  public isPrimeNumber(num:number):boolean{
+    for(let i= 2; i<num; i++){
+      const sub = num%i;
+      if(sub === 0){
+        return false;
+      }
+    }
+    return true;
   }
 }
