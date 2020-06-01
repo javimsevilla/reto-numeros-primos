@@ -29,12 +29,3 @@ test("should return false if number is composed", () => {
   // Assert
   expect(result).toBe(expected);
 });
-
-/*
-zero
-one
-two
-two-max
-max
-max+1
-*/
